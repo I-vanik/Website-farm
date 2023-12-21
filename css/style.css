@@ -1,0 +1,256 @@
+@import url(reset.css);
+
+@font-face {
+    font-family:'Antarctic';
+    src: url(../fonts/Antarctic.otf);
+
+    
+}
+
+@font-face {
+    font-family:'Durik';
+    src: url(../fonts/Durik.ttf);
+}
+
+/* font-family: 'Antarctic'; */
+
+:root {
+    --text-white: #fff;
+	--text-gray:#414446;
+	--text-black:#000;
+	--color-bg-white: #F6F0EB;
+	--color-bg-blue:#DAE3EA;
+	
+}
+
+html,body {
+ font-family: 'Durik';
+ 
+ background-color: var(--color-bg);
+}
+
+.group-bg{
+	background-image: url(../img/Fon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container {
+    margin:  0 auto;
+    padding: 0 15px;
+    max-width: 1810px;
+    
+}
+
+/* Navigation */
+
+.nav {
+    padding-top: 15px;
+}
+
+.nav-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    column-gap: 43px;
+    
+}
+
+.nav-item {
+
+}
+
+.nav-link {
+    
+    color: var(--text-white);   
+    font-size: 30px;
+    text-shadow: 
+		-0   -4px 0   #847F6F,
+		 0   -4px 0   #847F6F,
+		-0    4px 0   #847F6F,
+		 0    4px 0   #847F6F,
+		-4px -0   0   #847F6F,
+		 4px -0   0   #847F6F,
+		-4px  0   0   #847F6F,
+		 4px  0   0   #847F6F,
+		-1px -4px 0   #847F6F,
+		 1px -4px 0   #847F6F,
+		-1px  4px 0   #847F6F,
+		 1px  4px 0   #847F6F,
+		-4px -1px 0   #847F6F,
+		 4px -1px 0   #847F6F,
+		-4px  1px 0   #847F6F,
+		 4px  1px 0   #847F6F,
+		-2px -4px 0   #847F6F,
+		 2px -4px 0   #847F6F,
+		-2px  4px 0   #847F6F,
+		 2px  4px 0   #847F6F,
+		-4px -2px 0   #847F6F,
+		 4px -2px 0   #847F6F,
+		-4px  2px 0   #847F6F,
+		 4px  2px 0   #847F6F,
+		-3px -4px 0   #847F6F,
+		 3px -4px 0   #847F6F,
+		-3px  4px 0   #847F6F,
+		 3px  4px 0   #847F6F,
+		-4px -3px 0   #847F6F,
+		 4px -3px 0   #847F6F,
+		-4px  3px 0   #847F6F,
+		 4px  3px 0   #847F6F,
+		-4px -4px 0   #847F6F,
+		 4px -4px 0   #847F6F,
+		-4px  4px 0   #847F6F,
+		 4px  4px 0   #847F6F,
+		-4px -4px 0   #847F6F,
+		 4px -4px 0   #847F6F,
+		-4px  4px 0   #847F6F,
+		 4px  4px 0   #847F6F;
+}
+/* Header */
+
+.header {
+}
+.header-text {
+    
+}
+.header-text-h1  {
+	padding-top: 384px;
+	padding-bottom: 200px ;
+	padding-left: 15%;
+    color: var(--text-white);
+    font-size: 80px;
+}
+
+.header-text-h1 strong { 
+    font-family:'Antarctic';
+    font-size: 230px;
+    margin-left: 30%;
+}
+
+/* About */
+.main {
+	margin: 0 auto;
+}
+.about {
+	background-image: url(../img/Fon-2.png)
+	
+}
+
+.about-info {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	
+}
+.about-text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	max-width: 100%;
+	
+}
+.about-text-h2  {
+	font-family:'Antarctic';
+	font-size: 220px;
+	
+}
+.about-text-h3 {
+	font-size: 35px;
+	max-width: 900px;
+	text-align: center;
+	padding-top: 50px;
+}
+.about-text p {
+	font-size: 28px;
+	max-width: 400px;
+	text-align: center;
+	color: var(--text-gray);
+	padding-top: 50px;
+}
+
+/* Products */
+
+.products {
+	background-color: var(--color-bg-white);
+}
+.products-wrapper {
+}
+.products-title {
+	font-size: 180px;
+	font-family:'Antarctic';
+	text-align: center;
+	padding-top: 100px;
+	color: var(--text-gray);
+}
+.products-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.products-list {
+	font-size: 30px;
+	padding-top: 15px;
+}
+.products-list li {
+	font-size: 30px;
+	list-style-type: disc;
+	color: var(--text-gray);
+}
+
+.phenitsa-list {
+	
+}
+
+.potato-list {
+	padding-top: 20px;
+}
+
+/* Place */
+
+.Place {
+	background-color: var(--color-bg-blue);
+}
+.place-wrapper {
+}
+.place-title {
+	font-size: 180px;
+	font-family:'Antarctic';
+	text-align: center;
+	padding-top: 100px;
+	color: var(--text-gray);
+	padding-bottom: 80px;
+}
+.Place-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 30px;
+}
+.place-text {
+	text-align: center;
+	align-items: center;
+}
+.place-adress {
+	text-align: center;
+	max-width: 400px;
+	font-size: 22px;
+	
+}
+.place-adress h3{
+	font-size: 30px;
+}
+.place-time {
+	text-align: center;
+	max-width: 400px;
+	font-size: 22px;
+	padding-top: 15px;
+}
+.place-time h3 {
+	font-size: 30px;
+}
+
