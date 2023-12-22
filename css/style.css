@@ -18,6 +18,7 @@
     --text-white: #fff;
 	--text-gray:#414446;
 	--text-black:#000;
+	--text-blue:#066296;
 	--color-bg-white: #F6F0EB;
 	--color-bg-blue:#DAE3EA;
 	
@@ -51,16 +52,26 @@ html,body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+	column-gap: 43px;
+	flex-wrap: wrap;
 }
 
 .nav-items {
     display: flex;
     align-items: center;
     column-gap: 43px;
-    
+    flex-wrap: wrap;
 }
 
 .nav-item {
+
+}
+.nav-item::before {
+	content: '';
+
+	width: 30px;
+	height: 1px;
+	background-color: var(--text-white);
 
 }
 
@@ -136,8 +147,9 @@ html,body {
 	margin: 0 auto;
 }
 .about {
-	background-image: url(../img/Fon-2.png)
-	
+	background-image: url(../img/Fon-2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .about-info {
@@ -177,6 +189,7 @@ html,body {
 
 .products {
 	background-color: var(--color-bg-white);
+	padding: 100px 0;
 }
 .products-wrapper {
 }
@@ -184,18 +197,25 @@ html,body {
 	font-size: 180px;
 	font-family:'Antarctic';
 	text-align: center;
-	padding-top: 100px;
+	
 	color: var(--text-gray);
 }
 .products-flex {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	column-gap: 60px;
 }
 .products-list {
 	font-size: 30px;
 	padding-top: 15px;
 }
+
+.products-list ul {
+	padding-top: 15px;
+}
+
+
 .products-list li {
 	font-size: 30px;
 	list-style-type: disc;
@@ -214,6 +234,7 @@ html,body {
 
 .Place {
 	background-color: var(--color-bg-blue);
+	padding: 80px 0;
 }
 .place-wrapper {
 }
@@ -221,36 +242,229 @@ html,body {
 	font-size: 180px;
 	font-family:'Antarctic';
 	text-align: center;
-	padding-top: 100px;
 	color: var(--text-gray);
-	padding-bottom: 80px;
+	padding-bottom: 100px;
 }
 .Place-flex {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	column-gap: 30px;
+	column-gap: 60px;
 }
 .place-text {
 	text-align: center;
 	align-items: center;
+
 }
 .place-adress {
 	text-align: center;
-	max-width: 400px;
+	max-width: 500px;
 	font-size: 22px;
-	
+	padding-bottom: 60px;
 }
 .place-adress h3{
 	font-size: 30px;
+	color: var(--text-blue);
 }
 .place-time {
 	text-align: center;
-	max-width: 400px;
+	max-width: 500px;
 	font-size: 22px;
 	padding-top: 15px;
 }
 .place-time h3 {
 	font-size: 30px;
+	color: var(--text-blue);
+	
 }
 
+/* footer */
+
+.footer {
+	background-image: url(../img/sunset.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 80px 0;
+}
+.footer-info {
+	text-align: center;
+	-webkit-text-stroke:1px black;
+}
+.footer-info h2 {
+	font-family:'Antarctic';
+	font-size: 180px;
+	padding-bottom: 100px;
+	color: var(--text-white);
+}
+.footer-contacts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 200px;
+}
+.footer-contacts p {
+	color: var(--text-white);
+	opacity: 0.8;
+	font-size: 38px;
+	padding: 30px 0;
+}
+
+.footer-contacts a {
+	color: var(--text-white);
+	font-size: 40px;
+}
+
+@media (max-width: 1000px) {
+	.logo {
+		width: 50%;
+		text-align: center;
+	}
+	.nav-row {
+		text-align: center;
+		justify-content: space-between;
+		align-items: center;
+	
+	}
+
+	.nav-items {
+		justify-content: center;
+	}
+
+	.nav-link {
+		font-size: 26px;
+		text-align: center;
+	}
+
+	.header-text-h1 {
+		font-size: 30px;
+		padding: 60px 0;
+	}
+	.header-text-h1 strong { 
+		font-size: 60px;
+	}
+
+	.about {
+		background-image: none;
+		background-color: var(--color-bg-blue);
+		padding: 50px;
+		text-align: center;
+	}
+
+	.about-info img {
+		display: none;
+	}
+
+	.about-text-h2  {
+		font-size: 120px;
+		
+	}
+	.about-text-h3 {
+		font-size: 28px;
+
+	}
+	.about-text p {
+		font-size: 20px;
+	}
+
+	/* Products */
+
+	.products-title {
+		font-size: 90px;
+	}
+	.products-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		column-gap: 60px;
+	}
+	.products-list {
+		font-size: 26px;
+		padding-top: 35px;
+	}
+	
+	.products-list ul {
+		
+	}
+	
+	.pot{
+		display: none;
+	}
+	.products-list li {
+		font-size: 25px;
+		list-style-type: disc;
+		color: var(--text-gray);
+	}
+
+	/* Place */
+
+	.place-title {
+		font-size: 90px;
+		font-family:'Antarctic';
+		text-align: center;
+		color: var(--text-gray);
+		padding-bottom: 100px;
+	}
+	.Place-flex {
+		display: flex;
+		flex-direction: column;
+		row-gap: 60px;
+	}
+
+	.map{
+		max-width: 437px; 
+		height: 230px;
+		padding: 10px;
+	}
+	.place-text {
+		text-align: center;
+		align-items: center;
+	
+	}
+	.place-adress {
+		text-align: center;
+		max-width: 500px;
+		font-size: 22px;
+		padding-bottom: 60px;
+	}
+	.place-adress h3{
+		font-size: 26px;
+		color: var(--text-blue);
+	}
+	.place-time {
+		text-align: center;
+		max-width: 500px;
+		font-size: 22px;
+		padding-top: 15px;
+	}
+	.place-time h3 {
+		font-size: 26px;
+		color: var(--text-blue);
+		
+	}
+
+	.footer-info h2 {
+		font-family:'Antarctic';
+		font-size: 100px;
+		padding-bottom: 100px;
+		color: var(--text-white);
+	}
+	.footer-contacts {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 100px;
+	}
+	.footer-contacts p {
+		color: var(--text-white);
+		opacity: 0.8;
+		font-size: 38px;
+		padding: 30px 0;
+	}
+	
+	.footer-contacts a {
+		color: var(--text-white);
+		font-size: 40px;
+	}
+}
