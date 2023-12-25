@@ -59,6 +59,8 @@ html {
 
 .nav {
     padding-top: 15px;
+	position: fixed;
+	width: 100%;
 }
 
 .nav-row {
@@ -152,18 +154,17 @@ html {
     
 }
 .header-text-h1  {
-	padding-top: 280px;
-	padding-bottom: 100px ;
-	padding-left: 15%;
+	padding: 30% 0 15% 13%;
     color: var(--text-white);
     font-size: 75px;
 }
 
-.header-text-h1 strong { 
+.header-text-h1 em { 
     font-family:'Antarctic';
-    font-size: 200px;
-    margin-left: 30%;
+    font-size: 250px;
+    margin-left: 20%;
 }
+
 
 /* About */
 .main {
@@ -265,7 +266,7 @@ html {
 }
 
 .phenitsa-list {
-	
+	padding-bottom: 15px;
 }
 
 .potato-list {
@@ -307,6 +308,7 @@ html {
 .place-adress h3{
 	font-size: 30px;
 	color: var(--text-blue);
+	padding: 5px;
 }
 .place-time {
 	text-align: center;
@@ -314,11 +316,17 @@ html {
 	font-size: 22px;
 	padding-top: 15px;
 }
+
 .place-time h3 {
 	font-size: 30px;
 	color: var(--text-blue);
-	
+	padding: 5px;	
 }
+
+.place-time p {
+	padding-bottom: 5px;
+}
+
 
 /* footer */
 
@@ -393,7 +401,27 @@ html {
 	font-weight: 700;
 }
 
+@media (max-width: 1500px) {
+	.header-text-h1  {
+		padding: 30% 0 15% 13%;
+    	color: var(--text-white);
+    	font-size: 50px;
+}
+
+.header-text-h1 em { 
+    font-family:'Antarctic';
+    font-size: 200px;
+    margin-left: 20%;
+}
+}
+
 @media (max-width: 1000px) {
+
+	.nav {
+		padding-top: 15px;
+		position: relative;
+	}
+
 	.logo {
 		width: 50%;
 		text-align: center;
@@ -450,12 +478,13 @@ html {
 
 	.header-text-h1 {
 		font-size: 32px;
-		padding: 220px 0 70px 0;
+		padding: 220px 0 400px 0;
 		text-align: center;
 	}
-	.header-text-h1 strong { 
+	.header-text-h1 em { 
 		font-size: 90px;
 		margin-left: 0%;
+		word-spacing: -30px;
 	}
 
 	.about {
@@ -498,8 +527,13 @@ html {
 	
 	/* Products */
 
+	.products {
+		background-color: var(--color-bg-white);
+		padding: 40px 0;
+	}
+
 	.products-title {
-		font-size: 90px;
+		font-size: 80px;
 	}
 	.products-flex {
 		display: flex;
@@ -510,7 +544,7 @@ html {
 	}
 	.products-list {
 		font-size: 26px;
-		padding-top: 35px;
+		padding-top: 60px;
 	}
 	
 	.products-list ul {
@@ -529,7 +563,7 @@ html {
 	/* Place */
 
 	.place-title {
-		font-size: 90px;
+		font-size: 80px;
 		font-family:'Antarctic';
 		text-align: center;
 		color: var(--text-gray);
@@ -542,8 +576,8 @@ html {
 	}
 
 	.map{
-		max-width: 437px; 
-		height: 230px;
+		max-width: 330px; 
+		height: 330px;
 		padding: 10px;
 	}
 	.place-text {
@@ -575,8 +609,8 @@ html {
 
 	.footer-info h2 {
 		font-family:'Antarctic';
-		font-size: 100px;
-		padding-bottom: 100px;
+		font-size: 80px;
+		padding-bottom: 50px;
 		color: var(--text-white);
 	}
 	.footer-contacts {
@@ -584,17 +618,21 @@ html {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		row-gap: 100px;
+		row-gap: 50px;
+	}
+
+	.footer-contacts img {
+		width: 20%;
 	}
 	.footer-contacts p {
 		color: var(--text-white);
 		opacity: 0.8;
-		font-size: 38px;
-		padding: 30px 0;
+		font-size: 20px;
+		padding: 10px 0;
 	}
 	
 	.footer-contacts a {
 		color: var(--text-white);
-		font-size: 40px;
+		font-size: 20px;
 	}
 }
